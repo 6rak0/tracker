@@ -1,8 +1,5 @@
-import PocketBase from 'pocketbase';
-import { PRIVATE_PB_URL } from '$env/static/private';
 import { error } from '@sveltejs/kit';
-
-const pb = new PocketBase(PRIVATE_PB_URL);
+import pb from '$lib/db'
 
 export const load = async ({ params }) => {
 
